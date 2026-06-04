@@ -15,7 +15,7 @@ The data is imported from [E-Commerce Data](https://www.kaggle.com/datasets/carr
 
 ## Methodology
 1. **Data Collection:** Kaggle API
-2. **Data Cleaning:** (TBD)
+2. **Data Cleaning:** Dropped missing CustomerID, converted InvoiceDate to datetime and removed invalid transactions by filter Quantity and UnitPrice to keep only positive values.
 3. **Feature Engineering:** (TBD)
 4. **Statistical Scoring:** (TBD)
 5. **Customer Segmentation:** (TBD)

@@ -7,6 +7,9 @@ BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 
 DATA_DIR = os.path.join(BASE_DIR,"data")
 
+RAW_FILE_NAME = "data.csv"
+CUSTOM_FILE_NAME = "raw_data.csv"
+
 RAW_DATA_PATH = os.path.join(DATA_DIR,"raw_data.csv")
 CLEANED_DATA_PATH = os.path.join(DATA_DIR,"cleaned_data.csv")
 
