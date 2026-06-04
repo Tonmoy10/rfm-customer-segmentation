@@ -12,6 +12,7 @@ CUSTOM_FILE_NAME = "raw_data.csv"
 
 RAW_DATA_PATH = os.path.join(DATA_DIR,"raw_data.csv")
 CLEANED_DATA_PATH = os.path.join(DATA_DIR,"cleaned_data.csv")
+RFM_DATA_PATH = os.path.join(DATA_DIR,"rfm_data.csv")
 
 os.makedirs(DATA_DIR, exist_ok = True)
 
