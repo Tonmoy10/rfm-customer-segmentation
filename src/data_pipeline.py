@@ -1,14 +1,11 @@
-from dotenv import load_dotenv
-
-load_dotenv()
-
-import kaggle
 import sys
 import os
 
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__),'..')))
 
 from config import KAGGLE_DATASET,DATA_DIR, RAW_FILE_NAME, CUSTOM_FILE_NAME
+
+import kaggle
 
 
 
@@ -21,4 +18,3 @@ if __name__=="__main__":
 
     if os.path.exists(old_file_path):
         os.rename(old_file_path,new_file_path)
-        
