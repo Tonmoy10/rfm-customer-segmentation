@@ -21,6 +21,7 @@ def rfm_process():
         "TotalPrice":"sum"})
 
     rfm["InvoiceDate"] = (reference_date - rfm["InvoiceDate"]).dt.days
+    rfm["TotalPrice"] = rfm["TotalPrice"].round(4)
 
     rfm.rename(columns={"InvoiceDate":"Recency","InvoiceNo":"Frequency","TotalPrice":"Monetary"},inplace=True)
 

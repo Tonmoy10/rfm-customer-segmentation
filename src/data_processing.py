@@ -13,6 +13,8 @@ def data_process():
     df = df.dropna(subset=["CustomerID"],axis=0)
     df["InvoiceDate"] = pd.to_datetime(df["InvoiceDate"])
     df = df[(df["Quantity"]>0) & (df["UnitPrice"]>0)]
+    
+    df["CustomerID"] = df["CustomerID"].astype(int).astype(str)
 
     df.to_csv(CLEANED_DATA_PATH,index=False)
 
