@@ -19,7 +19,7 @@ def customer_segment(dat):
     for ptrn,label in segmentation.items():
         if re.fullmatch(ptrn,dat):
             return label
-    return "Standard Customer"
+    return "Standard Customers"
 
 def segment_assignment():
     
